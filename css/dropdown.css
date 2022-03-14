@@ -1,0 +1,123 @@
+:root {
+    --black: #282828;
+    --off-white: #eeeeee;
+    --red: #fb4934;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+@font-face {
+    font-family: "JetBrainsMonoNL Nerd Font";
+    src: url(../fonts/JetBrains Mono NL Regular Nerd Font Complete.ttf);
+}
+body {
+    font-family: "JetBrainsMonoNL Nerd Font";
+    overflow-x: hidden;
+    background-color: #009473;
+}
+
+.flex-container {
+    display: flex;
+    position: fixed;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 38px;
+    background-color: var(--off-white);
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- Dropdown menu -- */
+.drop-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 5rem;
+    margin-top: 0px;
+    opacity: 0;
+    transform: translateY(-120%);
+    text-align: center;
+}
+.drop-content div:first-child a {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.drop-content div:last-child a {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.drop-content div a {
+    display: block;
+    padding: 1rem 0 1rem 0;
+    transition: all 0.5s ease;
+}
+.drop-content div a:hover {
+    background-color: var(--off-white);
+}
+a span {
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+.drop-content div a:hover span {
+    opacity: 1;
+    transform: translateX(-18%);
+}
+.hide {
+    opacity: 0;
+    padding-left: 6px;
+    position: absolute;
+}
+.drop-content {
+    transition: all 0.4s ease-in-out;
+}
+.btn:hover .drop-content {
+    transform: translateY(0%);
+    opacity: 1;
+    width: 7rem;
+    transition: all 0.5s ease-in-out;
+}
+.btn {
+    height: 44px;
+    text-align: center;
+    width: 7rem;
+    cursor: pointer;
+}
+.hover {
+    margin: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+}
+.progress {
+    width: 0px;
+    height: 4px;
+    background-color: var(--red);
+    opacity: 0;
+    border-radius: 1rem;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    float: right;
+}
+.btn:hover .progress {
+    width: 112px;
+    opacity: 1;
+}
+/* ------------------- */
+main {
+    display: flex;
+    justify-content: center;
+}
+div.up {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    height: 500px;
+    width: 90%;
+    margin-top: 100px;
+}
