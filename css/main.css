@@ -166,11 +166,8 @@ ul.links {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /*
-    gap: 6%;
-    */
     width: 80%;
-    height: 800px;
+    height: 100%;
 }
 .price-plan {
     display: flex;
@@ -178,7 +175,7 @@ ul.links {
     justify-content: space-between;
     align-items: center;
     font-size: var(--font-large);
-    height: 100%;
+    height: 787px;
     width: 500px;
     border-radius: 0.5rem;
     background-color: var(--white);
