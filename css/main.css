@@ -367,9 +367,13 @@ ul.donation li span {
 /* -================- */
 
 /* -- Contact section (including form) -- */
+.contact-wrapper {
+    background-color: var(--white);
+    padding: 4em;
+    border-radius: 0.5rem;
+}
 .contact-title{
-    margin-top: 100px;
-    color: #c4abab;
+    color: #282828;
     text-transform: uppercase;
     transition: all 4s ease-in-out;
 }
@@ -390,7 +394,7 @@ form{
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
-    color: #FFFFFF;
+    color: #282828;
     font-size: 18px;
     margin-bottom: 16px;
 }
@@ -398,6 +402,7 @@ input{
     height: 45px;
 }
 form .submit{
+    border-radius: 0.5rem;
     background: #ff5722;
     border-color: transparent;
     color: #FFFFFF;
@@ -406,6 +411,7 @@ form .submit{
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
+    transition: all 0.5s ease;
 }
 form .submit:hover{
     background-color: #251083;
