@@ -37,6 +37,8 @@
 :root {
     --bg-color: #121213;
     --bg-lighter: #222224;
+    --bg-lighter-lighter: #282828;
+    --bg-font: #dddddd;
     --white: #f9fcff;
     --dark-white: #eeeeee;
     --font-medium: 28px;
@@ -60,6 +62,7 @@ body {
 }
 * {
     padding: 0;
+    transition: background-color 0.1s ease-in-out;
 }
 main {
     margin-top: 50px;
@@ -83,8 +86,9 @@ nav {
     width: 80%;
     margin-top: 2rem;
     border-radius: 0.5rem;
-    background-color: #282828;
+    background-color: var(--bg-lighter-lighter);
     font-size: 24px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 #Donate a, nav a {
     text-decoration: none;
@@ -123,6 +127,7 @@ ul.links {
     padding: 1rem;
     transition: all 0.5s ease-in-out;
     border-radius: 0.5rem;
+    color: var(--bg-font);
 }
 .links li a:hover, .links li a:focus {
     background-color: var(--bg-lighter);
@@ -135,7 +140,6 @@ ul.links {
     border-radius: 0.5rem;
     align-self: center;
     transform: translateY(500%);
-    background-color: var(--white);
     background-color: var(--bright-green);
     transition: all 0.2s ease-in-out;
     opacity: 0;
@@ -179,6 +183,7 @@ ul.links {
     width: 500px;
     border-radius: 0.5rem;
     background-color: var(--white);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 64px;
 }
@@ -279,9 +284,6 @@ ul.donation li span {
 }
 .right-wrap {
     display: flex;
-    /*
-    gap: 8%;
-    */
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -296,6 +298,7 @@ ul.donation li span {
     background-color: var(--white);
     align-self: flex-end;
     background-color: #EBDBB2;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 .coffee .img {
     display: flex;
@@ -318,7 +321,7 @@ ul.donation li span {
 }
 .coffee div:nth-child(1) > span {
     font-family: 'Sansita Swashed', cursive;
-    color: var(--bg-lighter);
+    color: #222224;
     font-weight: bold;
     font-size: var(--font-medium);
 }
@@ -348,6 +351,7 @@ ul.donation li span {
     flex: 1;
     background-color: var(--white);
     border-radius: 0.5rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     margin-bottom: 64px;
 }
 .donate-links h1 {
@@ -371,6 +375,7 @@ ul.donation li span {
     background-color: var(--white);
     padding: 4em;
     border-radius: 0.5rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 .contact-title{
     color: #282828;
