@@ -471,8 +471,6 @@ form .submit:hover {
 .checkbox:checked + .label::before {
     transform: translateX(100%);
 }
-.checkbox:checked + .label {
-}
 .label *:nth-child(1) {
     color: #f1c40f;
     z-index: 1;
