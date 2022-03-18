@@ -1,10 +1,5 @@
 # Our Website for DIME project
 
-Branch: This is the testing branch
-```link
-https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#ch03-git-branching
-```
-
 This is a repository to store the website for the
 our DIME project.
 
