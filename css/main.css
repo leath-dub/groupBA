@@ -35,9 +35,9 @@
     }
 }
 :root {
-    --bg-color: #121213;
+    --bg-color: #23272a;
     --bg-lighter: #222224;
-    --bg-lighter-lighter: #282828;
+    --bg-lighter-lighter: #2c2f33;
     --bg-font: #dddddd;
     --white: #f9fcff;
     --dark-white: #eeeeee;
@@ -287,6 +287,7 @@ ul.donation li span {
     height: 100%;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 64px;
 }
 .coffee {
     display: flex;
@@ -371,30 +372,38 @@ ul.donation li span {
 /* -================- */
 
 /* -- Contact section (including form) -- */
+#Contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
 .contact-wrapper {
+    width: 600px;
     background-color: var(--white);
     padding: 4em;
     border-radius: 0.5rem;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
-.contact-title{
+.contact-title {
     color: #282828;
     text-transform: uppercase;
     transition: all 4s ease-in-out;
 }
-.contact-title h1{
+.contact-title h1 {
     font-size: 32px;
     line-height: 10px;
 }
-.contact-title h2{
+.contact-title h2 {
     font-size: 16px;
 }
-form{
+form {
     margin-top: 50px;
     transition: all 4s ease-in-out;
 }
-.form-control{
-    width: 600px;
+.form-control {
+    display: flex;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -403,10 +412,10 @@ form{
     font-size: 18px;
     margin-bottom: 16px;
 }
-input{
+input {
     height: 45px;
 }
-form .submit{
+form .submit {
     border-radius: 0.5rem;
     background: #ff5722;
     border-color: transparent;
@@ -418,11 +427,50 @@ form .submit{
     margin-top: 20px;
     transition: all 0.5s ease;
 }
-form .submit:hover{
+form .submit:hover {
     background-color: #251083;
     cursor: pointer;
 }
 /* -====================================- */
+
+/* -- Darkmode Toggle -- */
+.checkbox {
+    display: none;
+}
+.checkbox + .label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 16px;
+    padding: 0.15rem;
+    border-radius: 20px;
+    background-color: #23272a;
+}
+.checkbox + .label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #f9fcff;
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+.checkbox:checked + .label::before {
+    transform: translateX(100%);
+}
+.checkbox:checked + .label {
+}
+.label *:nth-child(1) {
+    color: #f1c40f;
+    z-index: 1;
+}
+.label *:nth-child(2) {
+    color: #f39c12;
+    z-index: 1;
+}
+/* -===================- */
 
 /* -- About section -- */
 /* -=================- */
