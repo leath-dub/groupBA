@@ -424,6 +424,9 @@ input {
     height: 45px;
 }
 form .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.5rem;
     background: #ed4245;
     border-color: transparent;
