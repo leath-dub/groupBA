@@ -1,2 +1,2 @@
-var inputs = document.getElementsByClass('checkbox');
-input[0].checked = true
+var inputs = document.getElementById('checkbox');
+inputs.checked = true
