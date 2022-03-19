@@ -24,6 +24,11 @@
     #Product {
         width: 100% !important;
     }
+    .container span * {
+    height: 2rem !important;
+    width: 2rem !important;
+    color: #eeeeee;
+    }
 }
 @media only screen and (max-width: 450px) {
     .navbar img {
@@ -546,4 +551,79 @@ form .submit:hover {
 /* -===================- */
 
 /* -- About section -- */
+#About {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+#About *:not(span) {
+    font-size: 24px;
+}
+.big-wrap {
+    display: flex;
+    width: 50%;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+.small-wrap {
+    padding: 3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+.small-wrap > * {
+    width: 100%;
+}
+.big-wrap > * {
+    width: 100% !important;
+}
+.container {
+    background-color: white;
+    color: #282828;
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .sub-wrap {
+    padding-left: 3rem;
+    height: 0;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(.05,.16,.21,1.61);
+    overflow: hidden;
+    width: 100%;
+    background-color: #eeeeee;
+}
+.container:focus .sub-wrap {
+    padding: 3rem;
+    height: 10em;
+}
+.container h2 {
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #7289da;
+    padding: 1em;
+    color: #eeeeee;
+    width: 100%;
+}
+.container h2 span {
+    justify-self: flex-end;
+}
+.container span > * {
+    height: 5rem;
+    width: 5rem;
+    color: #eeeeee;
+}
+.container h2::before {
+    content: "";
+}
 /* -=================- */
