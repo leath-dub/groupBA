@@ -17,6 +17,13 @@
     .coffee div:nth-child(1) {
         padding-left: 0 !important;
     }
+    .img > img {
+        height: 535px !important;
+        width: 295px !important;
+    }
+    #Product {
+        width: 100% !important;
+    }
 }
 @media only screen and (max-width: 450px) {
     .navbar img {
@@ -369,6 +376,63 @@ ul.donation li span {
 /* -=========================- */
 
 /* -- Product section */
+#Product {
+    width: 78%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.product {
+    display: flex;
+    width: 80%;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/waves.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.product .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start center;
+    padding: 2em;
+    flex: 1;
+}
+.product .info h1 {
+    font-size: 250%;
+    margin: 10px;
+}
+.product .info p {
+    font-size: 140%;
+    padding: 3%;
+    text-align: justify;
+    margin: 0;
+}
+.product .info h2 {
+    font-size: 200%;
+    padding: 3%;
+    text-align: center;
+    margin: 0;
+}
+.product .info ul {
+    font-size: 120%;
+    padding: 3%;
+    margin: 0;
+    list-style-position: inside; 
+    list-style-type: circle;
+}
+.product .img {
+    padding: 2em;
+    display: flex;
+    height: 90%;
+}
 /* -================- */
 
 /* -- Contact section (including form) -- */
