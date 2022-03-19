@@ -17,6 +17,11 @@
     .coffee div:nth-child(1) {
         padding-left: 0 !important;
     }
+    .container span * {
+    height: 2rem !important;
+    width: 2rem !important;
+    color: #eeeeee;
+    }
 }
 @media only screen and (max-width: 450px) {
     .navbar img {
