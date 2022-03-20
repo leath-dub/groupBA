@@ -618,6 +618,7 @@ form .submit:hover {
 }
 .container:focus .sub-wrap {
     padding: 3rem;
+    padding-top: 0;
     height: 10em;
     overflow: scroll;
 }
