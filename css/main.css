@@ -29,6 +29,15 @@
     width: 2rem !important;
     color: #eeeeee;
     }
+    .small-wrap, .big-wrap {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        width: 74% !important;
+    }
+    .sub-wrap {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 }
 @media only screen and (max-width: 450px) {
     .navbar img {
@@ -570,8 +579,10 @@ form .submit:hover {
     flex-wrap: wrap;
 }
 .small-wrap {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     border-radius: 0.5rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background-color: white;
     width: 50%;
     margin-bottom: 3rem;
@@ -590,7 +601,8 @@ form .submit:hover {
     flex-wrap: wrap;
 }
 .container .sub-wrap {
-    padding-left: 3rem;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     height: 0;
     z-index: 1;
     transition: all 0.5s cubic-bezier(.05,.16,.21,1.61);
@@ -598,9 +610,16 @@ form .submit:hover {
     width: 100%;
     background-color: #eeeeee;
 }
+.sub-wrap ul {
+    padding-left: 2vw;
+}
+.sub-wrap p {
+    word-wrap: break-word;
+}
 .container:focus .sub-wrap {
     padding: 3rem;
     height: 10em;
+    overflow: scroll;
 }
 .container h2 {
     cursor: pointer;
